@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(53, 51, 51);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.heading {
+    color: white;
+}
+
+.pace-box {
+    width: 300px;
+    background: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 10px black;
+    margin-bottom: -10px;
+}
+
+.pace-box .heading {
+    font-size: 30px;
+    text-align: center;
+}
+
+.pace-box .box {
+    width: 100%;
+    /* Mengikuti lebar penuh pace-box (300px) */
+    height: 120px;
+    /* 💡 WAJIB: Tentukan tinggi kotak menu di sini */
+    position: relative;
+    /* 💡 WAJIB: Mengunci teks absolute agar tetap di dalam .box */
+    overflow: hidden;
+    /* Memotong gambar/teks yang keluar dari garis lengkung */
+    border-radius: 5px;
+    /* Membuat sudut kotak melengkung rapi */
+    margin-bottom: 15px;
+    /* Memberikan jarak otomatis antar kotak (pengganti <br>) */
+    background: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.box .box-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    /* Mengetengahkan teks secara horizontal */
+    align-items: center;
+    /* Mengetengahkan teks secara vertikal */
+    background: #73737766;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.box .box-text:hover {
+    color: white;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 2;
+    cursor: pointer;
+}
+
+.container .pace-box .img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Gambar dipotong proporsional memenuhi kotak (tidak gepeng) */
+    /* object-position: center; */
+    display: block;
+}
+
+.box-link {
+    text-decoration: none;
+    /* Menghilangkan garis bawah pada link */
+    color: inherit;
+    /* Memastikan warna teks mengikuti setelan .box-text */
+    display: block;
+    /* Membuat link membungkus kotak dengan sempurna */
+}
+
+/* ---------- */
+
+.bawah {
+    width: 340px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px black;
+    margin: 5px;
+}
+
+.bawah footer {
+    height: auto;
+    /* 💡 Ubah dari 80px ke auto agar menampung teks & ikon dengan pas */
+    padding: 20px 0;
+    /* Memberi ruang aman atas-bawah setelah tingginya menjadi auto */
+    display: flex;
+    flex-direction: column;
+    /* ➡️ KUNCI: Membuat elemen di dalamnya tersusun ke bawah */
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(223, 215, 215);
+    margin-top: auto;
+    gap: 10px;
+}
+
+.social a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
+.social a:hover {
+    color: red;
+}
+
+.bawah .buttom {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    height: 30px;
+}
+
+.bawah .buttom span {
+    font-weight: bold;
+}
+
+.bawah .buttom p {
+    font-size: 11px;
+}

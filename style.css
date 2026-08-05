@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to left bottom, rgb(223, 215, 215), rgb(71, 74, 75));
+    /* display: flex; */
+    /* flex-direction: column; */
+    min-height: 100vh;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.pace-box {
+    width: 300px;
+    background: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px black;
+    margin-bottom: -10px;
+}
+
+.pace-box .heading {
+    font-size: 30px;
+    text-align: center;
+}
+
+.pace-box .input {
+    padding: 10px 20px;
+    font-size: 18px;
+    background: white;
+    border: 2px solid black;
+    margin: 10px;
+}
+
+.pace-box .hasil {
+    padding: 10px 20px;
+    font-size: 18px;
+    background: white;
+    border: 2px solid black;
+    margin: 10px;
+    /* color: black; */
+}
+
+.pace-box .input:hover {
+    border: 2px solid rgb(10, 233, 10);
+}
+
+.pace-box .btn {
+    background-color: rgb(247, 137, 117);
+    border: none;
+    padding: 5px 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin: 10px;
+    box-shadow: 0 0 4px black;
+    cursor: pointer;
+}
+
+.pace-box .btn:hover {
+    background: black;
+    color: white;
+    box-shadow: 0 0 8px black;
+    transition: all 300ms ease;
+}
+
+.pace-box .info-text {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+.bawah {
+    width: 340px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px black;
+    margin: 5px;
+}
+
+.bawah footer {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(223, 215, 215);
+    margin-top: auto;
+}
+
+.bawah .buttom {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    height: 30px;
+}
+
+.bawah .buttom span {
+    font-weight: bold;
+}
+
+.bawah .buttom p {
+    font-size: 11px;
+}

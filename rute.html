@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Rute</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="pace-box">
+            <h1 class="heading">YOUR RUTE</h1>
+            <!-- Age :
+            <input type="number" class="input" id="age" placeholder="masukan umur"> -->
+            <!--  -->
+            Rute :
+            <input list="ruteList" class="input" id="rute" placeholder="pilih rute">
+            <datalist id="ruteList">
+                <option value="3 KM"></option>
+                <option value="5 KM"></option>
+                <option value="10 KM"></option>
+                <option value="15 KM"></option>
+                <option value="20 KM"></option>
+            </datalist>
+            <!--    -->
+            <button class="btn" id="btn">Download Rute</button>
+            <!-- <input disabled type="text" class="hasil" id="hr-result">
+            <h4 class="info-text">Your Target HR Level : <br> <span id="hr-status"></span></h4> -->
+            <!-- TEMPAT MENAMPILKAN GAMBAR (TAMBAHKAN INI) -->
+            <div class="image-box" style="margin-top: 20px; text-align: center;">
+                <img id="rute-image" src="" alt="Silahkan pilih rute"
+                    style="max-width: 100%; display: none; border-radius: 8px;">
+            </div>
+
+        </div>
+        <div class="bawah">
+            <footer id="kontak">
+                <p>RUN WITH YOUR EGO</p>
+            </footer>
+
+            <div class="buttom">
+                <p>&copy; Copyright 2026 - <span>cahayabulanproject</span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="rute.js"></script>
+</body>
+
+</html>

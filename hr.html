@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your HR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="pace-box">
+            <h1 class="heading">YOUR HR</h1>
+            Age :
+            <input type="number" class="input" id="age" placeholder="masukan umur">
+            <!--  -->
+            Pilih Zona :
+            <input list="zonaList" class="input" id="zona" placeholder="pilih zona">
+            <datalist id="zonaList">
+                <option value="zona1" data-value="0.5,0.6"></option>
+                <option value="zona2" data-value="0.6,0.7"></option>
+                <option value="zona3" data-value="0.7,0.8"></option>
+                <option value="zona4" data-value="0.8,0.9"></option>
+                <option value="zona5" data-value="0.9,1.0"></option>
+            </datalist>
+            <!--    -->
+            <button class="btn" id="btn">Your HR</button>
+            <input disabled type="text" class="hasil" id="hr-result">
+            <h4 class="info-text">Your Target HR Level : <br> <span id="hr-status"></span></h4>
+        </div>
+        <div class="bawah">
+            <footer id="kontak">
+                <p>RUN WITH YOUR EGO</p>
+            </footer>
+
+            <div class="buttom">
+                <p>&copy; Copyright 2026 - <span>cahayabulanproject</span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="hr.js"></script>
+</body>
+
+</html>

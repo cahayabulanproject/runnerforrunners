@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Pace</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="pace-box">
+            <h1 class="heading">YOUR PACE</h1>
+            Kilometer (km) :
+            <input type="number" class="input" id="km" placeholder="masukan satuan km">
+            <!--  -->
+            Time Target / (menit) :
+            <input type="number" class="input" id="time" placeholder="masukan satuan menit">
+            <!--    -->
+            <button class="btn" id="btn">Your Pace</button>
+            <input disabled type="text" class="hasil" id="pace-result">
+            <h4 class="info-text">Your Target Pace Level : <br> <span id="pace-status"></span></h4>
+        </div>
+        <div class="bawah">
+            <footer id="kontak">
+                <p>RUN WITH YOUR EGO</p>
+            </footer>
+
+            <div class="buttom">
+                <p>&copy; Copyright 2026 - <span>cahayabulanproject</span></p>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <script src="pace.js"></script>
+
+</body>
+
+</html>
