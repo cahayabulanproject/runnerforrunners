@@ -29,6 +29,7 @@ body {
     flex-direction: column;
     box-shadow: 0 10px 10px black;
     margin-bottom: -10px;
+    border-radius: 15px;
 }
 
 .pace-box .heading {
@@ -89,6 +90,7 @@ body {
 }
 
 .box-link {
+    padding-top: 20px;
     text-decoration: none;
     /* Menghilangkan garis bawah pada link */
     color: inherit;
