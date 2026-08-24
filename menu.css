@@ -50,8 +50,7 @@ body {
     /* Memotong gambar/teks yang keluar dari garis lengkung */
     border-radius: 5px;
     /* Membuat sudut kotak melengkung rapi */
-    margin-bottom: 15px;
-    /* Memberikan jarak otomatis antar kotak (pengganti <br>) */
+    
     background: white;
     display: flex;
     flex-direction: column;
