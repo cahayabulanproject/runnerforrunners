@@ -29,8 +29,7 @@ body {
     display: flex;
     flex-direction: column;
     box-shadow: 0 10px 10px black;
-    margin-top: -20px;
-    margin-bottom: -20px;
+    margin: 0 0 -20px 0;
     border-radius: 10px;
 }
 
@@ -50,7 +49,6 @@ body {
     /* Memotong gambar/teks yang keluar dari garis lengkung */
     border-radius: 5px;
     /* Membuat sudut kotak melengkung rapi */
-    
     background: white;
     display: flex;
     flex-direction: column;
@@ -99,6 +97,10 @@ body {
     /* Memastikan warna teks mengikuti setelan .box-text */
     display: block;
     /* Membuat link membungkus kotak dengan sempurna */
+}
+
+.box-linkbawah{
+    margin: 20px 0 70px 0;
 }
 
 /* ---------- */
