@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-    padding: 40px;
+    padding: 20px 0 60px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -18,8 +18,43 @@ body {
     flex: 1;
 }
 
-.heading {
-    color: white;
+
+.logo {
+    /* background: black; */
+    width: 100px;
+    object-fit: cover;
+    display: block;
+    margin: 30px 0 0 0;
+    /* Perbaikan sintaks drop-shadow dan tambahan transisi untuk hover */
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.9));
+    /* Jalankan animasi otomatis */
+    animation: floatAnim 3s ease-in-out infinite;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Animasi Otomatis: Membuat logo mengapung naik turun */
+@keyframes floatAnim {
+    0% {
+        transform: translateY(0px);
+        filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.9));
+    }
+
+    50% {
+        transform: translateY(-8px);
+        /* Logo naik */
+        filter: drop-shadow(0 12px 12px rgba(0, 0, 0, 0.6));
+        /* Bayangan menjauh & memudar */
+    }
+
+    100% {
+        transform: translateY(0px);
+        filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.9));
+    }
+}
+
+h4 {
+    margin: 10 0 0 0;
+    font-weight: bold;
 }
 
 .pace-box {
@@ -29,7 +64,7 @@ body {
     display: flex;
     flex-direction: column;
     box-shadow: 0 10px 10px black;
-    margin: 0 0 -20px 0;
+    margin: 20px 0 -20px 0;
     border-radius: 10px;
 }
 
@@ -86,21 +121,21 @@ body {
     /* Gambar dipotong proporsional memenuhi kotak (tidak gepeng) */
     /* object-position: center; */
     display: block;
+    border: 2px solid black;
 }
 
 .box-link {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    text-decoration: none;
-    /* Menghilangkan garis bawah pada link */
-    color: inherit;
-    /* Memastikan warna teks mengikuti setelan .box-text */
-    display: block;
-    /* Membuat link membungkus kotak dengan sempurna */
+    margin: 20px 0 20px 0;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px 0 black;
 }
 
-.box-linkbawah{
+.box-linkbawah {
     margin: 20px 0 70px 0;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px 0 black;
 }
 
 /* ---------- */
