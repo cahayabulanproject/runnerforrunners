@@ -8,7 +8,8 @@ const gambarRute = {
     "5 KM": "Rute/5K.jpg",
     "10 KM": "Rute/10K.jpg",
     "15 KM": "Rute/15K.jpg",
-    "20 KM": "Rute/20K.jpg"
+    "20 KM": "Rute/20K.jpg",
+    "21 KM": "Rute/21K.jpg"
 };
 
 // Fungsi untuk mendeteksi pilihan pengguna
@@ -51,6 +52,9 @@ document.getElementById('btn').addEventListener('click', function() {
             break;
         case '20 KM':
             urlTujuan = 'https://drive.google.com/drive/folders/1ZXko7SQUtl3BEmadx9kzwDGcr8ISwLhQ?usp=sharing'; // Ganti dengan link Anda
+            break;
+        case '21 KM':
+            urlTujuan = 'https://drive.google.com/drive/folders/1bt_e1yG_Z6eUPuKNTWoIbBDp8Nks0SsZ?usp=sharing'; // Ganti dengan link Anda
             break;
         default:
             alert('Rute tidak valid! Silakan pilih dari daftar.');
